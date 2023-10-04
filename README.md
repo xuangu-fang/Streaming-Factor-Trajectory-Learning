@@ -13,7 +13,7 @@ The inference of the factor trajectory is in a streaming and online manner.
 ![Online inference by running posterior update](./figs/streaming.PNG)
 
 Example of learned functional frajectories of factors from real-world data.
-![Learned Factor Trajectories](./figs/streaming.PNG)
+![Learned Factor Trajectories](./figs/learnt_functions.PNG)
 
 ## Requirements:
 The project is mainly built with pytorch 1.10.1 under python 3. Besides that, make sure to install [tqdm](https://tqdm.github.io/) and [tensorly](http://tensorly.org/stable/index.html) before running the project.
