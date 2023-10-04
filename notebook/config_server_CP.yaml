@@ -1,0 +1,30 @@
+# config: hyper paras
+
+device: "cpu" #cuda'
+# epoch: 100
+# data_path: "data/beijing_15k.npy"
+# data_path: "data/ctr_20k.npy"
+# data_path: "data/server_10k.npy"
+data_path: "../data/server.npy"
+# data_path: "data/mvlens_10k.npy"
+
+R_U: 2
+a0: 1
+b0: 1
+v: 1
+fold: 1 # number of folds(random split) and take average,min:1,max:5'
+fix_int: True
+time_type: "continues" # is the time-step continues or discrete?
+
+kernel: "Matern_23" # GP kernel type, Matern_21 or Matern_23"
+lengthscale: 0.1 # lengthscale of kernel= torch.tensor(args.ls)
+variance: 1 # var of kernel
+noise: 1 # obvs_noise of KF, will not be used actully
+DAMPING: 0.3
+DAMPING_tau: 0.6
+EVALU_T: 100
+DAMPING_gamma: 0.5
+INNER_ITER: 50
+THRE: 1.0e-4 # therethold of CEP innner iteration
+TIME_RANGE: 1
+CEP_UPDATE_INNNER_MODE: True # whether do CEP mag_approx + post_update innner per mode, if false, we do it seperately after go through all mode
