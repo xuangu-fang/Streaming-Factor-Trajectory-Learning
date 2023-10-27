@@ -1,5 +1,5 @@
 # Streaming-Factor-Trajectory-Learning
-This authors' official PyTorch implementation for paper: Streaming Factor Trajectory Learning for Temporal Tensor Decomposition(NeurIPS 2023)
+This authors' official PyTorch implementation for paper: [Streaming Factor Trajectory Learning for Temporal Tensor Decomposition](https://arxiv.org/abs/2310.17021)(NeurIPS 2023) 
 
 
 ## Streaming Learning of Temporal Tensor Data
@@ -31,4 +31,13 @@ Please check our paper for more details.
 
 ## Citation
 Please cite our work if you would like it
+```
+@misc{fang2023streaming,
+      title={Streaming Factor Trajectory Learning for Temporal Tensor Decomposition}, 
+      author={Shikai Fang and Xin Yu and Shibo Li and Zheng Wang and Robert Kirby and Shandian Zhe},
+      year={2023},
+      eprint={2310.17021},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
